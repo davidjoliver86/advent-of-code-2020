@@ -42,7 +42,7 @@ def test_first_star():
     assert day2.first_star("answers/day2.txt") == 536
 
 
-def test_second():
+def test_second_star():
     """
     Validating second star logic.
     """

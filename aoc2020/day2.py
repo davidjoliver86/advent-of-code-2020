@@ -55,14 +55,14 @@ def validate_second_star_policy(policy: str) -> bool:
     return (first_match and not second_match) or (second_match and not first_match)
 
 
-def _star(fixture_path: str, func: Callable[[str], int]):
+def _star(fixture_path: str, func: Callable[[str], int]) -> int:
     """
     Helper function to count passwords that conform to a policy function.
     """
     return [func(policy) for policy in lines_from_file(fixture_path)].count(True)
 
 
-def first_star(fixture_path: str):
+def first_star(fixture_path: str) -> int:
     """
     :return: The number of passwords that conform to the first stars' rule.
     :rtype: int
@@ -70,7 +70,7 @@ def first_star(fixture_path: str):
     return _star(fixture_path, validate_first_star_policy)
 
 
-def second_star(fixture_path: str):
+def second_star(fixture_path: str) -> int:
     """
     :return: The number of passwords that conform to the second stars' rule.
     :rtype: int
