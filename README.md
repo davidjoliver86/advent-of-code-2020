@@ -13,7 +13,8 @@ with respect to industry best practices.
 * Everything is unit-tested against the examples provided. Pure TDD.
 * Only Python code goes in the `aoc2020` folder. All puzzle input is saved in `fixtures`.
 * Everything should be runnable as a module - e.g. `python -m aoc2020.day1`.
-* Pylint code quality must be 10/10. No exceptions will be made yet.
+* Pylint code quality must be 10/10, with the following exceptions:
+  * `too-many-instance-attributes`
 * Code shall be formatted be `black`.
 * Type annotations for function arguments and return types shall be used whenever possible.
 * Remember that your input is not necessarily going to match mine. That being said,
