@@ -3,7 +3,7 @@ Day 3
 """
 from math import prod
 from typing import List, Iterable
-from aoc2020.utilities import lines_from_file
+from .utilities import lines_from_file
 
 EMPTY = "."
 TREE = "#"

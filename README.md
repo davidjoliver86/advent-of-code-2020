@@ -15,6 +15,7 @@ with respect to industry best practices.
 * Everything should be runnable as a module - e.g. `python -m aoc2020.day1`.
 * Pylint code quality must be 10/10, with the following exceptions:
   * `too-many-instance-attributes`
+  * `too-few-instance-methods`
 * Code shall be formatted by `black`.
 * Type annotations for function arguments and return types shall be used whenever possible.
 * Remember that your input is not necessarily going to match mine. That being said,
